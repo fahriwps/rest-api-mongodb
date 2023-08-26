@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+package-lock.json
+
+# dotenv
+.env
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Idea Webstorm
+.idea/
