@@ -52,7 +52,7 @@ const updateTransferStatus = (req, res) => __awaiter(void 0, void 0, void 0, fun
         }
         // Find ID of the transfer request
         const requestId = req.params.id;
-        const foundID = yield transfer_model_1.default.findOne({ requestId });
+        const foundID = yield transfer_model_1.default.findOne({ _id: requestId });
         if (!foundID) {
             return (0, response_handler_1.sendResponse)(res, 404, { error: 'Transfer request ID not found' });
         }
