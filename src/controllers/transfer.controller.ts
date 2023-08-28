@@ -45,7 +45,7 @@ const updateTransferStatus = async (req: Request, res: Response) => {
 
         // Find ID of the transfer request
         const requestId = req.params.id;
-        const foundID = await Transfer.findOne({ requestId });
+        const foundID = await Transfer.findOne({ _id: requestId });
 
         if (!foundID) {
             return sendResponse(res, 404, { error: 'Transfer request ID not found' });
